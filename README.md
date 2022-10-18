@@ -7,9 +7,9 @@ A [NeosModLoader](https://github.com/zkxs/NeosModLoader) mod for [Neos VR](https
 1. Download your [OS's version](https://github.com/dfgHiatus/StartupSounds/releases/latest) of this mod from the releases tab.
 1. Place `StartupSounds.dll` into your `nml_mods` folder. This folder should be at `C:\Program Files (x86)\Steam\steamapps\common\NeosVR\nml_mods` for a default install. You can create it if it's missing, or if you launch the game once with NeosModLoader installed it will create the folder for you.
 1. Place `ManagedBass.dll` and `bass.dll` into your Neos install folder. This folder should be at `C:\Program Files (x86)\Steam\steamapps\common\NeosVR` for a default install.
-1. Start the game. If you want to verify that the mod is working you can check your Neos logs.
+1. Start the game. If you want to verify that the mod is working you can check your Neos logs, or listen in for audio. I've included one sound track, credits below.
 
-If you want to change the sound played on startup, drop audio files of your choice into your `nml_mods/startup_sounds` folder. This folder should be at `C:\Program Files (x86)\Steam\steamapps\common\NeosVR\nml_mods\startup_sounds` for a default install. You can create it if it's missing and use modconfig to choose the sound in question.
+If you want to change the sound played on startup, drop audio files of your choice into your `nml_mods\startup_sounds` folder. This folder should be at `C:\Program Files (x86)\Steam\steamapps\common\NeosVR\nml_mods\startup_sounds` for a default install. You can create it if it's missing and use modconfig to choose the sound in question.
 
 ## Licenses
 - [ManagedBass.dll](https://github.com/ManagedBass/ManagedBass) - MIT License
