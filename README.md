@@ -1,6 +1,6 @@
 # StartupSounds 
 
-A [NeosModLoader](https://github.com/zkxs/NeosModLoader) mod for [Neos VR](https://neos.com/) that plays startup music. Finally, something to do while you load all of your mods!
+A [NeosModLoader](https://github.com/zkxs/NeosModLoader) mod for [Neos VR](https://neos.com/) that plays startup music. Finally, something to do while you load your mods!
 
 ## Installation
 1. Install [NeosModLoader](https://github.com/zkxs/NeosModLoader).
