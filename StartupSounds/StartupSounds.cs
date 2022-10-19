@@ -42,7 +42,7 @@ namespace StartupSounds
                 Msg($"The provided custom sound directory was invalid. Using the default sound directory: {defaultStartupSoundsPath}");
             }
 
-            // There are 4 states we need to check:
+            // There are 4 states we need to check. In the event we cannot load any audio, these methods will throw a FileNotFoundException
             string soundCanidate;
             if (usingSoundDir)
             {
@@ -96,7 +96,7 @@ namespace StartupSounds
             
             if (files.Length == 0) 
             {
-                if (dir == defaultStartupSoundsPath) // If we get here, then we have searched the custom sound AND default directory to find nothing.
+                if (dir == defaultStartupSoundsPath) // If we get here, then we have searched the custom sound AND default directory and found nothing!
                 {
                     throw new FileNotFoundException("No audio files were found in the default sound directory!");
                 }
@@ -106,7 +106,7 @@ namespace StartupSounds
             }
             else
             {
-                return files[new Random().Next(0, files.Length)];
+                return files[new Random().Next(0, files.Length - 1)];
             }
         }
 
