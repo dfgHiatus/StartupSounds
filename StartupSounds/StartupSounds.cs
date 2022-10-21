@@ -15,12 +15,18 @@ namespace StartupSounds
         public override string Link => "https://github.com/dfgHiatus/StartupSounds";
 
         public static ModConfiguration config;
+        public override void DefineConfiguration(ModConfigurationDefinitionBuilder builder)
+        {
+            builder
+                .Version(new Version(1, 0, 0))
+                .AutoSave(true);
+        }
 
         [AutoRegisterConfigKey]
-        public static readonly ModConfigurationKey<string?> soundDir = new ModConfigurationKey<string?>("soundDir", "Optional startup sounds directory. Leave empty to use the default \"startup_sounds\" folder", () => null);
+        public static readonly ModConfigurationKey<string> soundDir = new ModConfigurationKey<string>("soundDir", "Optional startup sounds directory. Leave empty to use the default \"startup_sounds\" folder", () => "");
 
         [AutoRegisterConfigKey]
-        public static readonly ModConfigurationKey<string> soundfile = new ModConfigurationKey<string>("soundfile", "The sound file to be played", () => "WaterLily.ogg");
+        public static readonly ModConfigurationKey<string> soundfile = new ModConfigurationKey<string>("soundfile", "The sound file to be played", () => "");
 
         [AutoRegisterConfigKey]
         public static readonly ModConfigurationKey<bool> random = new ModConfigurationKey<bool>("random", "Play a random song on startup", () => false);
