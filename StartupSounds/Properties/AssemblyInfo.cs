@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("StartupSounds")]
-[assembly: AssemblyDescription(" Play startup music when booting NeosVR ")]
+[assembly: AssemblyDescription(" Play startup music when booting Resonite ")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Hiatus Labs")]
 [assembly: AssemblyProduct("StartupSounds")]
